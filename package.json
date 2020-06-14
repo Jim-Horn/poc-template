@@ -1,0 +1,32 @@
+{
+    "name": "parcel-prototype-scaffold",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "scripts": {
+        "start": "parcel index.html",
+        "clean": "rimraf dist",
+        "build": "yarn clean && parcel build --no-source-maps index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Jim Horn <jim@jdhorn.com> (https://www.jdhorn.com)",
+    "license": "ISC",
+    "dependencies": {
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.0.5",
+        "pretty-quick": "2.0.1",
+        "react": "^16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "husky": "3.1.0",
+        "rimraf": "^3.0.2",
+        "sass": "1.26.8"
+    }
+}
