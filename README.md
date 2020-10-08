@@ -2,6 +2,8 @@
 
 To begin developing with this repo, enter these commands in your terminal:
 
+Cloned from https://github.com/Jim-Horn/poc-template
+
 ```bash
 # Install dependencies:
 yarn
