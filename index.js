@@ -1,8 +1,6 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Start from './components/Start';
 
-const DefaultView = () => {
-    return <Start />;
-};
-render(<DefaultView />, document.getElementById('base-target'));
+const container = document.getElementById('base-target');
+const root = createRoot(container);
+root.render(<Start />);
